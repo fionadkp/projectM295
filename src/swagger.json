@@ -17,18 +17,26 @@
       "description": "Endpoints for authentication"
     }
   ],
-  "schemes": ["http"],
+  "schemes": [
+    "http"
+  ],
   "securityDefinitions": {
     "basicAuth": {
       "type": "basic"
     }
   },
-  "consumes": ["application/json"],
-  "produces": ["application/json"],
+  "consumes": [
+    "application/json"
+  ],
+  "produces": [
+    "application/json"
+  ],
   "paths": {
     "/login": {
       "post": {
-        "tags": ["Authentication"],
+        "tags": [
+          "Authentication"
+        ],
         "summary": "Login with email and password to get access to the library",
         "description": "This route logs in the user with email and password to get access to the library. If the user is already logged in, a 200 status code is returned. If the user is not logged in, a 401 status code is returned.",
         "parameters": [
@@ -72,10 +80,14 @@
     },
     "/verify": {
       "get": {
-        "tags": ["Authentication"],
+        "tags": [
+          "Authentication"
+        ],
         "summary": "Verify if user is logged in",
         "description": "This route verifies if the user is logged in and returns the email of the user if logged in.",
-        "produces": ["application/json"],
+        "produces": [
+          "application/json"
+        ],
         "responses": {
           "200": {
             "description": "OK"
@@ -88,7 +100,9 @@
     },
     "/logout": {
       "delete": {
-        "tags": ["Authentication"],
+        "tags": [
+          "Authentication"
+        ],
         "summary": "Logout the user from the server and delete the session cookie",
         "description": "This route logs out the user from the server and deletes the session cookie.",
         "responses": {
@@ -100,10 +114,14 @@
     },
     "/tasks": {
       "get": {
-        "tags": ["Tasks"],
+        "tags": [
+          "Tasks"
+        ],
         "summary": "Get all tasks from the tasks.json and return them as JSON",
         "description": "This route returns all tasks from the tasks.json file.",
-        "produces": ["application/json"],
+        "produces": [
+          "application/json"
+        ],
         "responses": {
           "200": {
             "description": "OK"
@@ -114,10 +132,14 @@
         }
       },
       "post": {
-        "tags": ["Tasks"],
+        "tags": [
+          "Tasks"
+        ],
         "summary": "Create task and add it to tasks.json and return it as JSON",
         "description": "This route creates a task and adds it to the tasks.json file. If the user is not logged in, a 401 status code is returned.",
-        "produces": ["application/json"],
+        "produces": [
+          "application/json"
+        ],
         "parameters": [
           {
             "name": "title",
@@ -180,10 +202,14 @@
     },
     "/tasks/{id}": {
       "get": {
-        "tags": ["Tasks"],
+        "tags": [
+          "Tasks"
+        ],
         "summary": "Get task by id from tasks.json and return it as JSON",
         "description": "This route returns a task by its id from the tasks.json file.",
-        "produces": ["application/json"],
+        "produces": [
+          "application/json"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -205,10 +231,14 @@
         }
       },
       "put": {
-        "tags": ["Tasks"],
+        "tags": [
+          "Tasks"
+        ],
         "summary": "Update task by id from tasks.json and return it as JSON",
         "description": "This route updates a task by its id from the tasks.json file. If the user is not logged in, a 401 status code is returned.",
-        "produces": ["application/json"],
+        "produces": [
+          "application/json"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -255,10 +285,14 @@
         }
       },
       "delete": {
-        "tags": ["Tasks"],
+        "tags": [
+          "Tasks"
+        ],
         "summary": "Delete task by id from tasks.json and return it as JSON",
         "description": "This route deletes a task by adding a timestamp into doneAt to the task in the tasks.json file. If the user is not logged in, a 401 status code is returned.",
-        "produces": ["application/json"],
+        "produces": [
+          "application/json"
+        ],
         "parameters": [
           {
             "name": "id",
