@@ -1,0 +1,33 @@
+commit 38343908be240e1c80a6c247e55424124683c16b (HEAD -> main, origin/main)
+Author: fionadkp <fiona.waelti@gmail.com>
+Date:   Wed Jun 19 16:04:03 2024 +0200
+
+    project finished.
+
+commit ced231950d5f8bb5d98ea11760b87981bd5a1914
+Author: fionadkp <fiona.waelti@gmail.com>
+Date:   Wed Jun 19 14:43:33 2024 +0200
+
+    postman tests erfolgreich abgeschlossen, collection exportiert und hier abgespeichert als .json File.
+
+commit 4db266e8d48162f7571fa2745ddcd014e69fd0c2
+Author: fionadkp <fiona.waelti@gmail.com>
+Date:   Wed Jun 19 14:40:44 2024 +0200
+
+    postman tests durchgeführt und protokolliert in meinem tasks.json file.
+
+commit a6b59a35dbe6a403236c107c018f2d65180c2257
+Author: fionadkp <fiona.waelti@gmail.com>
+Date:   Wed Jun 19 14:20:40 2024 +0200
+
+    changed a few things with the files and wrote new code for the endpoints etc.
+
+commit f40bc5ec7f2b9a81aff654e969e86f94d6c98733
+Author: fionadkp <fiona.waelti@gmail.com>
+Date:   Wed Jun 19 10:51:11 2024 +0200
+
+    Prepared the files and structured them. Added gitignore and installed all the dependencies.
+
+commit 2f539fc4a4da3993278b9ea3f5e02f4f131cbcc7
+Author: fionadkp <fiona.waelti@gmail.com>
+Date:   Wed Jun 19 10:31:07 2024 +0200
